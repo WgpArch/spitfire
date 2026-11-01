@@ -1,0 +1,14 @@
+# MkDocs generated site (deployed via gh-pages branch)
+site/
+
+# Python/MkDocs cache
+__pycache__/
+.cache/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*.swp
+*~

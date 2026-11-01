@@ -1,0 +1,66 @@
+* {
+    font-family: 'Z003', 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e8dcc5;
+}
+
+/* Define colors - Morning Tea Palette */
+@define-color sheer-bg rgba(30, 37, 50, 0.85);
+@define-color border rgba(232, 220, 197, 0.2);
+@define-color text #e8dcc5;
+@define-color hover #d4b483;
+
+/* ============ ext-workspaces: sheer pill ============ */
+#workspaces {
+    background: @sheer-bg;
+    border: 1px solid @border;
+    border-radius: 17px;
+    padding: 0 8px;
+    margin: 0 4px;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    padding: 0 8px;
+    margin: 4px 2px;
+    color: @text;
+    font-weight: bold;
+    min-width: 24px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background: rgba(212, 180, 131, 0.25);
+    color: @hover;
+}
+
+#workspaces button:hover {
+    background: rgba(212, 180, 131, 0.15);
+    color: @hover;
+}
+
+/* ============ Modules ============ */
+#custom-launcher, #tray, #clock, #custom-weather, #custom-player, 
+#memory, #cpu, #temperature, #battery, #custom-notification, 
+#pulseaudio, #disk, #custom-power {
+    background: @sheer-bg;
+    border: 1px solid @border;
+    border-radius: 17px;
+    padding: 0 12px;
+    margin: 0 4px;
+    color: @text;
+}
+
+#custom-launcher:hover, #custom-power:hover {
+    background: rgba(212, 180, 131, 0.25);
+    color: @hover;
+}

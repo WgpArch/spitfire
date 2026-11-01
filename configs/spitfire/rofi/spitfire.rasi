@@ -1,0 +1,90 @@
+/* Morning Tea & Violin Theme for Rofi */
+
+* {
+    background: rgba ( 30, 37, 50, 85% );
+    background-color: transparent;
+    foreground: rgba ( 232, 220, 197, 100% ); /* Warm Cream */
+    bordercolor: rgba ( 212, 180, 131, 100% ); /* Warm Gold */
+
+    selected-normal-background: rgba ( 212, 180, 131, 100% ); /* Warm Gold */
+    selected-normal-foreground: rgba ( 30, 37, 50, 100% ); /* Deep Slate for contrast */
+
+    normal-background: rgba ( 0, 0, 0, 0% );
+    normal-foreground: @foreground;
+
+    urgent-foreground: rgba ( 255, 85, 112, 100% );
+    active-foreground: rgba ( 212, 180, 131, 100% ); /* Warm Gold */
+
+    separatorcolor: @bordercolor;
+}
+
+window {
+    width: 650px;
+    background-color: transparent;
+    background-image: url("/home/wgparch/Pictures/ALNW/Violin_resized.jpg");
+    border: 1px;
+    border-color: @bordercolor;
+    border-radius: 15px;
+    padding: 15px;
+    spacing: 10px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing: 10px;
+    padding: 5px;
+    border: 0px 0px 1px;
+    border-color: @separatorcolor;
+}
+
+prompt {
+    text-color: @foreground;
+    font: "Z003 16 bold";
+}
+
+entry {
+    text-color: @foreground;
+    font: "Z003 14";
+}
+
+listview {
+    lines: 14;
+    spacing: 5px;
+    padding: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    font: "Z003 14";
+}
+
+element-icon {
+    size: 24px;
+    margin: 0px 10px 0px 0px;
+}
+
+element.normal.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+    border: 1px;
+    border-color: @bordercolor;
+    font: "Z003 14 bold";
+}
+
+element alternate.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}

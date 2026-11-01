@@ -1,0 +1,18 @@
+site_name: WgpArch spitfire Config
+site_url: https://wgparch.github.io/spitfire/
+theme:
+  name: material
+  palette:
+    primary: amber
+    accent: amber
+  features:
+    - navigation.tabs
+    - navigation.expand
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Keybinds: keybinds.md
+  - Waybar & Scripts: waybar.md
+  - Look & Feel: theming.md
+  - Credits: credits.md
+  - Gallery: gallery.md
