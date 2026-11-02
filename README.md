@@ -1,5 +1,13 @@
 # spitfire Dotfiles
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux">
+  <img src="https://img.shields.io/badge/Wayland-00B4D8?style=for-the-badge&logo=wayland&logoColor=white" alt="Wayland">
+  <img src="https://img.shields.io/badge/Smithay-2C3E50?style=for-the-badge&logo=rust&logoColor=white" alt="Smithay">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+</p>
+
 Smithay-based dynamic tiling Wayland compositor riced with the **Gold & Navy** theme:
 12 native workspaces, sheer transparent Waybar, and warm gold accents.
 
